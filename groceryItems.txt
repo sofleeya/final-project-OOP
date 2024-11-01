@@ -1,0 +1,4 @@
+Grocery List:
+
+Item: telur, Quantity: 2
+Item: beras, Quantity: 1

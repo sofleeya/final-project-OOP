@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+    --tenne-tawny: #DEB887;
+    --tenne-tawny-dark: #cca97c;
+    --background-color: #f8f8f8;
+    --text-color: #333;
+}
+
+/* General Layout */
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--tenne-tawny);
+    color: #fff;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+/* Grocery List Container */
+.grocery-list-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Form Styles */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 20px; /* Adjusted for better spacing */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch area */
+    border: 1px solid var(--tenne-tawny);
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: var(--tenne-tawny-dark); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: var(--tenne-tawny);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: var(--tenne-tawny-dark);
+}
+
+/* Grocery List Styles */
+#groceryList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.grocery-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.grocery-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.grocery-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #331f05;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9rem;
+}
