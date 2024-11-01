@@ -1,0 +1,3 @@
+Meal Planner:
+
+Meal: nasi goreng, Time: Breakfast, Date: 2024-10-31, Calorie Target: 500
