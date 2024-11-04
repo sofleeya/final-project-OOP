@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Grocery List</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>🍽 Your Grocery List 🍲</h1>
+        <p>Organize your grocery items here!</p>
+    </header>
+    
+    <div class="content">
+        <aside class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index3.html"><button>Home</button></a></li>
+                <li><a href="mealcategory.html"><button>Find Your Meal</button></a></li>
+                <li><a href="crud.html"><button>Your Grocery List</button></a></li>
+                <li><a href="mealplanner.html"><button>Meal Planner</button></a></li>
+            </ul>
+        </aside>
+        
+        <main class="meal-display">
+            <div class="mainWrapper">
+                <h2>Manage Your Grocery List</h2>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="fileName">Grocery Item:</label>
+                        <input id="fileName" type="text" class="form-control" placeholder="Enter file name (e.g., groceryList.txt)">
+                    </div><br>
+
+                    <div class="form-group">
+                        <label for="fileContents">Enter Your Grocery Item:</label>
+                        <textarea id="fileContents" class="form-control" rows="10" placeholder="Enter grocery items" required></textarea>
+                    </div>
+                </form>
+
+                <div class="button-group">
+                    <button id="btnCreate" class="btn btn-default">Create</button>
+                    <button id="btnRead" class="btn btn-default">Read</button>
+                    <button id="btnUpdate" class="btn btn-default">Update</button>
+                    <button id="btnDelete" class="btn btn-default">Delete</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <footer class="footer-design">
+        <p>&copy; 2024 Delicious Meal Finder. All rights reserved.</p>
+    </footer>
+    
+    <script src="try2.js"></script>
+</body>
+</html>

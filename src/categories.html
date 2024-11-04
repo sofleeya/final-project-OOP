@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal by Categories</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="categories.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Find Meals by Categories</h2>
+        <blockquote>Explore a variety of meals based on categories and taste.<br>
+          <cite>- Culinary World</cite>
+        </blockquote>
+
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter a category" id="category-input">
+          <button type="submit" class="search-btn btn" id="category-search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal-category">
+          <!-- meal category item -->
+        </div>
+      </div>
+
+      <div class="meal-details">
+        <button type="button" class="btn recipe-close-btn" id="category-recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="meal-details-content">
+          <!-- Category Details -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="categories.js"></script>
+</body>
+</html>

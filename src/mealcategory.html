@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>🍽️ Find Your Meal 🍲 </h1>
+        <p>Enter Category and Ingredient to search:</p>
+        <div class="search-area">
+            <input type="text" id="category_input" placeholder="e.g., dessert">
+            <input type="text" id="ingredient_input" placeholder="e.g., chocolate">
+            <button onclick="buttonClicked()">Search</button>
+        </div>
+    </header>
+    <div class="content">
+        <aside class="sidebar">
+            <h3>Explore:</h3>
+            <ul>
+                <li><a href="index3.html"><button>Homepage</button></a></li>
+                <li><a href="mealcategory.html"><button>Find Your Meal</button></a></li>
+                <li><a href="crud.html"><button>Your Grocery List</button></a></li>
+                <li><button>Meal Planner</button></li>
+            </ul>
+        </aside>
+        <main class="meal-display">
+            <div id="results">
+                <h3 id="demo1"></h3>
+                <h3 id="demo2"></h3>
+                <div id="demo3"></div>
+                <div id="demo4"></div>
+                <img id="mealImage" alt="" width="300px">
+            </div>
+        </main>
+    </div>
+
+
+
+
+    <footer class="footer-design">
+        <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

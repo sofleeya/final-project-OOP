@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meal Finder</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EBEBEF; /* Light Neutral */
+    margin: 0;
+    color: #3C2320; /* Dark Brown */
+}
+
+header {
+    background-color: #955132; /* Darker Brown */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.search {
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #D09150; /* Warm Tan */
+    background-color: #DEBD9B; /* Light Tan */
+    color: #3C2320; /* Dark Brown */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #D09150; /* Warm Tan */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #955132; /* Darker Brown on hover */
+}
+
+.meal-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meal-card {
+    background-color: #DEBD9B; /* Light Tan for meal cards */
+    border: 1px solid #D09150; /* Warm Tan */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.meal-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+
+</style>
+<body>
+    <header>
+        <h1>Meal Finder</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Popular Meals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="search">
+            <input type="text" id="menu_input" placeholder="Search for meals...">
+            <button id="search-button" onclick="buttonClicked()">Search</button>
+        </section>
+
+        <section id="meal-results" class="meal-results">
+            <!-- Meal cards will be inserted here -->
+        </section>
+
+        <div id="meal-info" >
+            <h2 id="demo1"></h2>
+            <h3 id="demo2"></h3>
+            <h4>Ingredients:</h4>
+            <div id="demo3"></div>
+            <h4>Instructions:</h4>
+            <div id="demo4"></div>
+        </div>
+    </main>
+
+    <script src="meal.js"></script>
+</body>
+</html>
